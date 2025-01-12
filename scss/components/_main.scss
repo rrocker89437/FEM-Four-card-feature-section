@@ -22,12 +22,22 @@
 
     &--title {
       margin-bottom: u.rem(10);
-      font-size: u.rem(29);
+      font-size: 1.5rem; // 24px - 29px
+      font-size: clamp(
+        1.5rem,
+        1.3899647887323943rem + 0.4694835680751174vw,
+        1.8125rem
+      );
       color: var(--dark-blue);
     }
 
     &--description {
-      font-size: u.rem(19);
+      font-size: 1.0625rem; // 27px - 20px
+      font-size: clamp(
+        1.0625rem,
+        0.9964788732394366rem + 0.2816901408450704vw,
+        1.25rem
+      );
       color: var(--gray-blue);
     }
 

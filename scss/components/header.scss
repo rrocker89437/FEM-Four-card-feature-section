@@ -10,11 +10,15 @@
     &--title {
       @media (min-width: u.em(1000)) {
         margin-top: u.rem(10);
-        font-size: u.rem(42);
       }
 
       display: block;
-      font-size: u.rem(32);
+      font-size: 2rem;
+      font-size: clamp(
+        2rem,
+        1.7799295774647887rem + 0.9389671361502347vw,
+        2.625rem
+      );
       font-weight: 200;
       margin-top: u.rem(20);
 
