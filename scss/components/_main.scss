@@ -1,0 +1,54 @@
+@use "../util/" as u;
+
+.main {
+  &__content {
+    @media (min-width: u.em(1000)) {
+      margin-bottom: u.rem(10);
+    }
+
+    margin-bottom: u.rem(20);
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: u.rem(300);
+    margin-bottom: u.rem(30);
+    padding: u.rem(30);
+    border-radius: u.rem(7);
+    background-color: var(--white);
+    box-shadow: 0 8px 20px var(--gray-blue);
+
+    &--title {
+      margin-bottom: u.rem(10);
+      font-size: u.rem(29);
+      color: var(--dark-blue);
+    }
+
+    &--description {
+      font-size: u.rem(19);
+      color: var(--gray-blue);
+    }
+
+    &--img {
+      position: absolute;
+      width: u.rem(75);
+      bottom: u.rem(30);
+      right: u.rem(30);
+    }
+  }
+}
+
+.border-cyan {
+  border-top: u.rem(5) solid var(--cyan);
+}
+.border-red {
+  border-top: u.rem(5) solid var(--red);
+}
+.border-orange {
+  border-top: u.rem(5) solid var(--orange);
+}
+.border-blue {
+  border-top: u.rem(5) solid var(--blue);
+}

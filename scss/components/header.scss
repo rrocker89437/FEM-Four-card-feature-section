@@ -1,0 +1,46 @@
+@use "../util/" as u;
+
+.header {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--title {
+      @media (min-width: u.em(1000)) {
+        margin-top: u.rem(10);
+        font-size: u.rem(42);
+      }
+
+      display: block;
+      font-size: u.rem(32);
+      font-weight: 200;
+      margin-top: u.rem(20);
+
+      &--span {
+        @media (min-width: u.em(1000)) {
+          margin-bottom: u.rem(10);
+        }
+
+        display: block;
+        margin-bottom: u.rem(22);
+        color: var(--dark-blue);
+        font-weight: 600;
+      }
+    }
+
+    &--description {
+      @media (min-width: u.em(1000)) {
+        max-width: u.rem(700);
+        margin-bottom: u.rem(30);
+      }
+
+      text-align: center;
+      max-width: u.rem(400);
+      font-size: u.rem(20);
+      font-weight: 400;
+      color: var(--gray-blue);
+    }
+  }
+}

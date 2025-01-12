@@ -2,17 +2,82 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/public/favicon-32x32.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>FEM Four Card</title>
   </head>
   <body>
+    <header class="header">
+      <div class="header__content wrapper wrapper-mobile">
+        <h1 class="header__content--title">
+          Reliable, efficient delivery
+          <span class="header__content--title--span"
+            >Powered by Technology</span
+          >
+        </h1>
+        <p class="header__content--description">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main__content wrapper wrapper-mobile grid">
+        <div class="main__card grid__card--1 border-cyan">
+          <h2 class="main__card--title">Supervisor</h2>
+          <p class="main__card--description">
+            Monitors activity to identify project roadblocks
+          </p>
+          <img
+            src="/public/icon-supervisor.svg"
+            alt="Supervisor Icon"
+            class="main__card--img"
+          />
+        </div>
+        <div class="main__card grid__card--2 border-red">
+          <h2 class="main__card--title">Team Builder</h2>
+          <p class="main__card--description">
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <img
+            src="/public/icon-team-builder.svg"
+            alt="Team Builder Icon"
+            class="main__card--img"
+          />
+        </div>
+        <div class="main__card grid__card--3 border-orange">
+          <h2 class="main__card--title">Karma</h2>
+          <p class="main__card--description">
+            Regularly evaluates our talent to ensure quality
+          </p>
+          <img
+            src="/public/icon-karma.svg"
+            alt="Karma Icon"
+            class="main__card--img"
+          />
+        </div>
+        <div class="main__card grid__card--4 border-blue">
+          <h2 class="main__card--title">Calculator</h2>
+          <p class="main__card--description">
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <img
+            src="/public/icon-calculator.svg"
+            alt="Calculator Icon"
+            class="main__card--img"
+          />
+        </div>
+      </section>
+    </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
-<!-- Reliable, efficient delivery Powered by Technology Our Artificial 
- Intelligence powered tools use millions of project data points to ensure 
- that your project is successful Supervisor Monitors activity to identify 
- project roadblocks Team Builder Scans our talent network to create the optimal 
- team for your project Karma Regularly evaluates our talent to ensure quality 
- Calculator Uses data from past projects to provide better delivery estimates  -->
